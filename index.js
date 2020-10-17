@@ -3,7 +3,11 @@ const app = express();
 const port = 3000;
 
 app.get('/', (req, res) => {
-  res.send(`Hello World`)
+  res.sendFile(`/public/index.html`, {root: __dirname})
 })
 
-app.listen(port)
+app.use(express.static(`public`))
+
+app.listen(port, () => {
+  console.log(`Started server on port ${port}`)
+})
