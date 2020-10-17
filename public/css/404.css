@@ -1,0 +1,23 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: black;
+}
+
+.centered {
+  text-align: center
+}
+
+.centered-image {
+  width: 750px;
+  height: 600px;
+  display: block;
+  margin: auto;
+}
+
+.button {
+  display: block;
+  margin: auto;
+  background-color: white;
+  border-color: white;
+  border-radius: 20px;
+}
