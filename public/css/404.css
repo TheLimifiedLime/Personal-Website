@@ -4,12 +4,12 @@ body {
 }
 
 .centered {
-  text-align: center
+  text-align: center;
 }
 
 .centered-image {
-  width: 750px;
-  height: 600px;
+  width: 700px;
+  height: 550px;
   display: block;
   margin: auto;
 }
@@ -20,4 +20,6 @@ body {
   background-color: white;
   border-color: white;
   border-radius: 20px;
+  width: 30px;
+  heigth: 15px;
 }
