@@ -2,74 +2,87 @@
 <html>
 
 <head>
-	<!--Analytics -->
-	<script src="https://unpkg.com/lyticus">
+	<script src="https://kit.fontawesome.com/44df751230.js" crossorigin="anonymous">
 	</script>
-	<script>
-		var lyticus = new Lyticus("DqEjDi-wkvuesJJGRhivi");
-    lyticus.trackNavigator();
-    lyticus.trackPage();
-	</script>
-	<!--Title-->
-	<title>Issai H | Developer</title>
-	<!--Default Meta Tags-->
+	<title>Tailwind CSS</title>
 	<meta charset="UTF-8">
-	<meta name="description" content="Personal site for Issai H a developer with experience in HTML, CSS, and Javascript">
-	<meta name="keywords" content="Issai, Issai H, Developer, HTML, CSS, JavaScript">
-	<meta name="author" content="Issai H">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!--Open Graph Meta Tag-->
-	<meta property="og:site_name" content="Issai H | Developer">
-	<meta property="og:title" content="Issai H | Developer">
-	<meta property="og:description" content="Personal site for Issai H a developer with experience in HTML, CSS, and Javascript">
-	<meta property="og:image" content="">
-	<meta property="og:url" content="https://issai.ml">
-	<!--Twitter Meta Tags-->
-	<meta name="twitter:title" content="Issai H | Developer">
-	<meta name="twitter:description" content="Personal site for Issai H a developer with experience in HTML, CSS, and Javascript">
-	<meta name="twitter:image" content="">
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:image:alt" content="No image">
-	<!--Other Metadata-->
-	<meta name="theme-color" content="#2ECC71">
-	<!--Stylesheets and Fonts-->
-	<!--Bootstrap-->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
-	 crossorigin="anonymous">
-	<!--Google Fonts-->
-	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-	<!--Styles-->
-	<link rel="stylesheet" href="/css/home.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="/css/tailwind.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<style>
+		.floating {
+			animation-name: floating;
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
+		}
+
+		@keyframes floating {
+			0% {
+				transform: translate(0, 0px);
+			}
+			50% {
+				transform: translate(0, 15px);
+			}
+			100% {
+				transform: translate(0, -0px);
+			}
+		}
+	</style>
 </head>
 
-<body>
-	<nav class="navbar navbar-expand-sm navbar-dark bg-success">
-		<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navCollapse">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<body class="bg-gray-800">
+	<div class="flexbox flex-col">
+		<div>
+			<br>
+    </div>
+
+    <div>
+      <h1 class="animate__animated animate__slideInDown text-center text-3xl text-green-500 font-mono">Hey 👋,</h1>
+      <h1 class="animate__animated animate__slideInDown text-center text-3xl text-green-500 font-mono">I'm <span class="text-white">Issai H.</span></h1>
+      <h1 class="animate__animated animate__slideInDown text-center text-3xl text-green-500 mb-12 font-mono">A developer focusing on HTML, CSS, and Javascript</h1>
+    </div>
+
+    <div>
+      <h1 class="animate__animated animate__slideInDown text-center text-3xl text-green-500 font-mono">About Me:</h1>
+      <br>
+      <h1 class="animate__animated animate__slideInDown text-center text-base text-green-500 font-mono">I'm a 13 year old "developer" who likes to code Discord Bots, little scripts, and sometimes little websites. I started coding at the beginning of 2020 and have since improved my skills. I hope to gain more experience and knowlege as I move forward.</h1>
+    </div>
+    <br>
+    <div>
+      <h1 class="animate__animated animate__slideInDown text-center text-3xl text-green-500 font-mono">My Projects:</h1>
+      <br>
+      <img class="floating place-self-centered rounded-full" style="margin: auto;" src="https://file.coffee/u/Kzgf60Qpeb.png" alt="Seashell Logo"  width="200px" height="200px" ondragstart="return false;">
+      <br>
+      <h1 class="text-center text-3xl text-green-500 mb-12 font-mono">
+        <a class="hover:underline" href="https://github.com/SeasideDevs" target="_blank">Seashell</a>
+      </h1>
+    </div>
+
+    
   
-		<div class="collapse navbar-collapse" id="navCollapse">
-			<ol class="navbar-nav">
-				<li class="nav-item">
-					<a class="nav-link" href="https://issai.ml">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link disabled" href="https://issai.ml/projects">Projects</a>
-				</li>
-			</ol>
-		</div>
-  </nav>
+    <div class="text-center">
+      <h1 class="animate__animated animate__slideInDown text-center text-3xl text-green-500 font-mono">Contact Me:</h1>
+      <form class="font-mono" action="https://Tailwind-CSS.thelimifiedlime.repl.co/api/form" method="POST" target="_self" accept-charset="UTF-8" id="contact">
+        <!--Email-->
+        <label for="email" class="animate__animated animate__slideInDown text-center text-lg text-green-500 font-mono">Email:</label>
+        <br>
+        <input id="email" type="email" class="text-center outline-none rounded-md w-56 h-8 focus:ring-4 focus:ring-green-400" type="text" maxlength="50" placeholder="contact@issai-is.cool" name="email" required>
+        <br>
+        <!--Subject-->
+        <label for="subject" class="animate__animated animate__slideInDown text-center text-lg text-green-500 font-mono">Subject:</label>
+        <br>
+        <input id="subject" type="text" class="text-center outline-none rounded-md h-8 focus:ring-4 focus:ring-green-400 w-3/4 sm:w-2/4" minlength="40" maxlength="200" placeholder="Hey are you able to tell me how you made this awesome form?" name="subject" required>
+        <br>
+         <!--Message-->
+        <label for="messsage" class="animate__animated animate__slideInDown text-center text-lg text-green-500 font-mono">Message:</label>
+        <br>
+        <textarea id="message" type="text" class="text-center outline-none rounded-md focus:ring-4 focus:ring-green-400 w-3/4 sm:w-2/4 resize-y" minlength="60" maxlength="400" placeholder="I really like how you designed this form. It is the best one I seen in ages. Please tell me how to be this good!" name="message" required rows="2"></textarea>
+        <br>
+        <br>
+        <input id="sb" type="submit" value="Submit" class="rounded-md bg-gradient-to-r from-green-400 to-green-600 px-4 py-2" >
+      </form>
+    </div>
+  </div>
 
-	<h1>Hello, and Welcome</h1>
-	<p class="title">I'm Issai H a developer with experience in HTML, CSS, and Javascript</p>
-  <p>If this page looks like crap it's because I was using bootstrap for the first time. Looking for a better framework. Suggestions accepted <a href="https://github.com/TheLimifiedLime/Personal-Website">here</a>
-  <!--jQuery and other plugins needed for Bootstrap-->
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-	 crossorigin="anonymous">
-	</script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-	 crossorigin="anonymous">
-	</script>
 </body>
-
 </html>
