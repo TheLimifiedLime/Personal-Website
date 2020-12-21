@@ -37,11 +37,15 @@ app.post('/api/form', [
   async function run() {
     const verifier = require(`./functions/verify.js`)
     const result = await verifier.verify(req.body["h-captcha-response"])
-    console.log(result)
     return result;
   }
 
-  run()
+  const result = run()
+  .then(function (result) {
+    if (result !== true) {
+      res.redirect(`https://issai.club/error`) 
+    }
+  })
 
   res.redirect(`https://issai.club/success`) 
   const data = {
@@ -66,13 +70,13 @@ app.post('/api/form', [
       }
     ]
   }
-  axios.post(process.env.WEBHOOK, data)
+  /* axios.post(process.env.WEBHOOK, data)
   .then(function (response) {
     console.log(`Posted to webhook`)
   })
   .catch(function (error) {
     console.log(`Error!`+ error)
-  })
+  }) */
 });
 
 
