@@ -137,12 +137,12 @@
           <div class="h-captcha m-auto" data-sitekey="10000000-ffff-ffff-ffff-000000000001" data-theme="dark" data-callback="hcaptcha_callback"" style="display: inline-block;"></div>
           <script src="https://hcaptcha.com/1/api.js" async defer></script>
           <br>
-          <input id="sb" type="submit" value="Complete the captcha to continue" class="rounded-md bg-gradient-to-r from-green-400 to-green-600 px-4 py-2" disabled>
+          <input id="sb" type="submit" value="Submit" class="rounded-md bg-gradient-to-r from-green-400 to-green-600 px-4 py-2" disabled>
           <script>
             function hcaptcha_callback() {
-              const element = document.getElementById("sb")
-              element.value = 'Submit'
-              alert("callback working");
+              const element = document.getElementById("sb");
+              element.removeAttribute("disabled");
+              element.classList.add("cursor-pointer")
             }
           </script>
         </form>
