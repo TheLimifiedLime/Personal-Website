@@ -30,7 +30,6 @@ app.post('/api/form', [
   // Finds the validation errors in this request and wraps them in an object with handy functions
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
-    res.send(`There was a error submitting the form and we couldnt redirect you` + JSON.stringify(errors))
     return res.redirect('https://issai.club/error');
   }
 
