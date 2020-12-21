@@ -7,7 +7,7 @@ const port = 3000;
 
 app.use('/api/form', ratelimit({
     burst: 1, // Max 10 concurrent requests (if tokens)
-    rate: 0.1, // Steady state: 1 request / 2 seconds
+    rate: 1, // Steady state: 1 request / 2 seconds
     ip: true
 }));
 
@@ -26,6 +26,7 @@ app.get('/', (req, res) => {
 })
 
 app.post('/api/form', [
+  body('h-captcha-response').not().isEmpty().trim().escape(),
     body('email').isLength({
         min: 5,
         max: 50
@@ -57,9 +58,7 @@ app.post('/api/form', [
     const result = run()
         .then(function(result) {
             if (result !== true) {
-                console.log(`no captjcwj`)
-                return res.send(`dumbass captcha isnt filled out`)
-                //return res.sendFile('/public/error.html', {root: __dirname});
+                return res.sendFile('/public/error.html', {root: __dirname});
             } else if (result === true) {
                 res.redirect(`https://issai.club/success`)
                 const data = {
