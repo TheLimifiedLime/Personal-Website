@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /humans.txt
+Disallow: /success
+Disallow: /error
+Disallow: /brb
+Disallow: /brokenbrb.html
+Disallow: /tailwind.config.js
+Disallow: /postcss.config.js
+
+Sitemap: https://issai.club/sitemap.xml
