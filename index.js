@@ -7,7 +7,7 @@ const port = 3000;
 
 app.use('/api/form', ratelimit({
     burst: 1, // Max 10 concurrent requests (if tokens)
-    rate: 1, // Steady state: 1 request / 2 seconds
+    rate: 0.1, // Steady state: 1 request / 2 seconds
     ip: true
 }));
 
@@ -95,9 +95,9 @@ app.post('/api/form', [
 });
 
 
-/* app.use(function(req, res, next) {
+app.use(function(req, res, next) {
   res.status(404).sendFile(`/public/404.html`, { root: __dirname })
-}) */
+})
 
 app.listen(port, () => {
     console.log(`Started server on port ${port}`)
