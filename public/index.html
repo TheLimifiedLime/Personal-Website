@@ -117,7 +117,7 @@
         <header>
           <h1 class="animate__animated animate__slideInDown text-center text-3xl text-green-500 font-mono">Contact Me:</h1>
         </header>
-        <form class="font-mono" action="https://Tailwind-CSS.thelimifiedlime.repl.co/api/form" method="POST" target="_self" accept-charset="UTF-8" id="contact">
+        <form class="font-mono" action="https://issai.club/api/form" method="POST" target="_self" accept-charset="UTF-8" id="contact">
           <!--Email-->
           <label for="email" class="animate__animated animate__slideInDown text-center text-lg text-white font-mono">Email:</label>
           <br>
@@ -133,6 +133,9 @@
           <br>
           <textarea id="message" type="text" class="text-center outline-none rounded-md focus:ring-4 focus:ring-green-400 w-3/4 sm:w-2/4 resize-y" minlength="60" maxlength="400" placeholder="I really like how you designed this form. It is the best one I seen in ages. Please tell me how to be this good!" name="message" required rows="2"></textarea>
           <br>
+          <br>
+          <div class="h-captcha" data-sitekey="d957bbd0-ca4d-41c2-bfa7-cbc2b72c0305"></div>
+          <script src="https://hcaptcha.com/1/api.js" async defer></script>
           <br>
           <input id="sb" type="submit" value="Submit" class="rounded-md bg-gradient-to-r from-green-400 to-green-600 px-4 py-2" >
         </form>

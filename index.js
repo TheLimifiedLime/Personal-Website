@@ -26,15 +26,18 @@ app.post('/api/form', [
   body('subject').isLength({ min: 40, max: 200}).not().isEmpty().trim().escape(),
   body('message').isLength({ min: 60 , max: 400}).not().isEmpty().trim().escape()
 ], (req, res) => {
+  
   // Finds the validation errors in this request and wraps them in an object with handy functions
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
     res.send(`There was a error submitting the form and we couldnt redirect you` + JSON.stringify(errors))
-    return res.redirect('https://tailwind-css.thelimifiedlime.repl.co/error');
+    return res.redirect('https://issai.club/error');
   }
-
-  res.redirect(`https://tailwind-css.thelimifiedlime.repl.co/success`)
-  const data = {
+  
+  const verifier = require(`./functions/verify.js`)
+  verifier.verify(req.body["h-captcha-response"])
+ //res.redirect(`https://issai.club/success`) 
+ const data = {
   "content": "📨  New message on issai.club <@738966191519039640>!",
   "embeds": [
     {
@@ -56,13 +59,13 @@ app.post('/api/form', [
     }
   ]
 }
-  axios.post(process.env.WEBHOOK, data)
+  /* axios.post(process.env.WEBHOOK, data)
   .then(function (response) {
     console.log(`Posted to webhook`)
   })
   .catch(function (error) {
     console.log(`Error!`+ error)
-  })
+  }) */
 });
 
 
