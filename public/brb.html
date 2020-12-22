@@ -12,30 +12,11 @@
 	</script>
 	<script src="https://kit.fontawesome.com/44df751230.js" crossorigin="anonymous">
 	</script>
-	<title>Tailwind CSS</title>
+	<title>Maintenence Mode</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-	<style>
-		.floating {
-			animation-name: floating;
-			animation-duration: 3s;
-			animation-iteration-count: infinite;
-		}
-
-		@keyframes floating {
-			0% {
-				transform: translate(0, 0px);
-			}
-			50% {
-				transform: translate(0, 15px);
-			}
-			100% {
-				transform: translate(0, -0px);
-			}
-		}
-	</style>
 </head>
 
 <body class="bg-gray-800">
@@ -55,7 +36,7 @@
         element.innerText = `${message}.`
       }
       const edit = () => {
-        const items = ['Upgrading DNS Subnet', 'Fixing some HTML bugs', 'Deploying to apache', 'LISTS START AT 0', 'Oh crap more bugs?', 'Whoops accidentally tripped over a cable', 'How do I center this div?', 'Inverting binary trees', 'Hacking the NSA', 'Crashing production', 'Launching IP grabbing satellites', 'Selling your data to clowns working for the goverment', 'Inverting some more binary trees', 'Preparing some statements', 'Wiping Database', 'Launching DDOs attack', 'running the tree command to “scan for viruses”', 'Wiping Hard Drive', 'rm -rf / --no-preserve-root', 'Invite Arctic to your discord server https://arcticbot.com/invite', 'Questioning life choices', 'Wondering why the NODE_MODULES folder is 5tb']
+        const items = ['Upgrading DNS Subnet', 'Fixing some HTML bugs', 'Deploying to apache', 'LISTS START AT 0', 'Oh crap more bugs?', 'Whoops accidentally tripped over a cable', 'How do I center this div?', 'Inverting binary trees', 'Hacking the NSA', 'Crashing production', 'Launching IP grabbing satellites', 'Selling your data to clowns working for the goverment', 'Inverting some more binary trees', 'Preparing some statements', 'Wiping Database', 'Launching DDOS attack', 'running the tree command to “scan for viruses”', 'Wiping Hard Drive', 'rm -rf / --no-preserve-root', 'Invite Arctic to your discord server https://arcticbot.com/invite', 'Questioning life choices', 'Wondering why the NODE_MODULES folder is 5tb', 'Testing in production', 'Using innerHTML instead of innnerText', 'PNG all the things', 'Accidentally pushing to the master branch', '$5000 AWS Bill 😎', 'Forgetting to cancel the free GCP trial', 'Caching the cache', 'It worked on my computer']
         const min = 0
         const max = items.length - 1
         let randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
@@ -64,8 +45,8 @@
         element.innerText = items[randomNum]
       }
 
-      setInterval(edit, 6000)
-      setInterval(addDot, 2000)
+      setInterval(edit, 5000)
+      setInterval(addDot, 1500)
     </script>
 </body>
 </html>
