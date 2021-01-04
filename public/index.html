@@ -9,6 +9,8 @@
 		var lyticus = new Lyticus("DqEjDi-wkvuesJJGRhivi");
     lyticus.trackNavigator();
     lyticus.trackPage();
+
+    window.addEventListener("click", lyticus.clickTracker());
 	</script>
 	<script src="https://kit.fontawesome.com/44df751230.js" crossorigin="anonymous">
 
@@ -90,7 +92,7 @@
           <img class="floating place-self-centered rounded-full" style="margin: auto;" src="/media/seashell.webp" alt="Seashell Logo"  width="200px" height="200px" ondragstart="return false;">
           <br>
            <h1 class="text-center text-3xl text-white mb-12 font-mono">
-            <a class="hover:underline" href="https://github.com/SeasideDevs" target="_blank" rel="noreferrer noopener">Seashell</a>
+            <a data-track-click="seashell" class="hover:underline" href="https://github.com/SeasideDevs" target="_blank" rel="noreferrer noopener">Seashell</a>
           </h1>
         </section>
       </h1>
@@ -104,10 +106,10 @@
       <br>
         <div class="flex flex-row space-x-4">
           
-          <a style="margin-left:auto;margin-right:auto;" target="_blank" href="https://github.com/TheLimifiedLime" rel="noreferrer noopener"><i style="color:white;" class="animate__animated animate__slideInDown fab fa-github fa-3x"></i></a>
-          <a style="margin-left:auto;margin-right:auto;" target="_blank" href="https://discord.com/users/738966191519039640" rel="noreferrer noopener"><i style="color:white;" class="animate__animated animate__slideInDown fab fa-discord fa-3x"></i></a>
-          <a style="margin-left:auto;margin-right:auto;" target="_blank" href="https://reddit.com/u/TheLimifiedLime" rel="noreferrer noopener"><i style="color:white;" class="animate__animated animate__slideInDown fab fa-reddit fa-3x"></i></a>
-          <a style="margin-left:auto;margin-right:auto;" target="_blank" href="https://twitter.com/TheLimifiedLime" rel="noreferrer noopener"><i style="color:white;" class="animate__animated animate__slideInDown fab fa-twitter fa-3x"></i></a>
+          <a data-track-click="github" style="margin-left:auto;margin-right:auto;" target="_blank" href="https://github.com/TheLimifiedLime" rel="noreferrer noopener"><i style="color:white;" class="animate__animated animate__slideInDown fab fa-github fa-3x"></i></a>
+          <a data-track-click="discord" style="margin-left:auto;margin-right:auto;" target="_blank" href="https://discord.com/users/738966191519039640" rel="noreferrer noopener"><i style="color:white;" class="animate__animated animate__slideInDown fab fa-discord fa-3x"></i></a>
+          <a data-track-click="reddit" style="margin-left:auto;margin-right:auto;" target="_blank" href="https://reddit.com/u/TheLimifiedLime" rel="noreferrer noopener"><i style="color:white;" class="animate__animated animate__slideInDown fab fa-reddit fa-3x"></i></a>
+          <a data-track-click="twitter" style="margin-left:auto;margin-right:auto;" target="_blank" href="https://twitter.com/TheLimifiedLime" rel="noreferrer noopener"><i style="color:white;" class="animate__animated animate__slideInDown fab fa-twitter fa-3x"></i></a>
         
         </div>
       </section>
@@ -138,7 +140,7 @@
           <div class="h-captcha m-auto" data-sitekey="d957bbd0-ca4d-41c2-bfa7-cbc2b72c0305" data-theme="dark" data-callback="hcaptcha_callback"" style="display: inline-block;"></div>
           <script src="https://hcaptcha.com/1/api.js" async defer></script>
           <br>
-          <input id="sb" type="submit" value="Submit" class="rounded-md bg-gradient-to-r from-green-400 to-green-600 px-4 py-2" disabled>
+          <input id="sb" data-track-click="submit" type="submit" value="Submit" class="rounded-md bg-gradient-to-r from-green-400 to-green-600 px-4 py-2" disabled>
           <script>
             function hcaptcha_callback() {
               const element = document.getElementById("sb");
