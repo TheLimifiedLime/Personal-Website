@@ -14,14 +14,11 @@ app.use(
   })
 );
 
-app.use(
-  "/",
-  ratelimit({
-    burst: 1, // Max 10 concurrent requests (if tokens)
-    rate: 1, // Steady state: 1 request / 2 seconds
-    ip: true,
-  })
-);
+app.use('/', ratelimit({
+    burst: 3, // Max 10 concurrent requests (if tokens)
+    rate: 2, // Steady state: 1 request / 2 seconds
+    ip: true
+}));
 
 app.use(
   express.static(`public`, {
