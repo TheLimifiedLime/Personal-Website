@@ -36,6 +36,7 @@ app.use(
 );
 
 app.get("/", (req, res) => {
+  console.log(`Ping!`)
   res.sendFile(`/public/index.html`, {
     root: __dirname,
   });
