@@ -2,6 +2,6 @@ language: node_js
 node_js:
   - "12.16.1"
 os: linux
-branches: 
+branches:
   only:
     - master
