@@ -7,12 +7,12 @@ const port = 3000;
 
 // https://webdva.github.io/how-to-force-express-https-tutorial/
 app.use((req, res, next) => {
-        if (req.headers['x-forwarded-proto'] !== 'https') {
-            // the statement for performing our redirection
-            return res.redirect('https://' + req.headers.host + req.url);
-        } else {
-          return next();
-        } 
+  if (req.headers["x-forwarded-proto"] !== "https") {
+    // the statement for performing our redirection
+    return res.redirect("https://" + req.headers.host + req.url);
+  } else {
+    return next();
+  }
 });
 
 app.use(
