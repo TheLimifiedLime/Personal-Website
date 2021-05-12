@@ -1,169 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <script src="https://unpkg.com/lyticus"></script>
+    <script>
+      var lyticus = new Lyticus("DqEjDi-wkvuesJJGRhivi");
+      lyticus.trackNavigator();
+      lyticus.trackPage();
 
-<head>
-	<script src="https://unpkg.com/lyticus">
+      window.addEventListener("click", lyticus.clickTracker());
+    </script>
+    <script
+      src="https://kit.fontawesome.com/44df751230.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <!--Title-->
+    <title>Issai H | Developer</title>
+    <!--Default Meta Tags-->
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Personal site for Issai H a developer with experience in HTML, CSS, and Javascript"
+    />
+    <meta
+      name="keywords"
+      content="Issai, Issai H, Developer, HTML, CSS, JavaScript"
+    />
+    <meta name="author" content="Issai H" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-language" content="en-us" />
+    <!--Open Graph Meta Tag-->
+    <meta property="og:site_name" content="Issai H | Developer" />
+    <meta property="og:title" content="Issai H | Developer" />
+    <meta
+      property="og:description"
+      content="Personal site for Issai H a developer with experience in HTML, CSS, and Javascript"
+    />
+    <meta
+      property="og:image"
+      content="https://issai.club/media/green-ball.gif"
+    />
+    <meta property="og:url" content="https://issai.club" />
+    <!--Twitter Meta Tags-->
+    <meta name="twitter:creator" content="TheLimifiedLime" />
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:image:alt"
+      content="Green ball being sliced to forma triangle the forming back into a ball"
+    />
+    <!--Other Metadata-->
+    <meta name="theme-color" content="#2ECC71" />
+    <!--Stylesheets-->
+    <link href="/css/tailwind.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <meta name="msvalidate.01" content="CD9946591381E76F9F02C422F070BB4B" />
+    <style>
+      .floating {
+        animation-name: floating;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+      }
 
-	</script>
-	<script>
-		var lyticus = new Lyticus("DqEjDi-wkvuesJJGRhivi");
-    lyticus.trackNavigator();
-    lyticus.trackPage();
+      @keyframes floating {
+        0% {
+          transform: translate(0, 0px);
+        }
+        50% {
+          transform: translate(0, 15px);
+        }
+        100% {
+          transform: translate(0, -0px);
+        }
+      }
+    </style>
+  </head>
 
-    window.addEventListener("click", lyticus.clickTracker());
-	</script>
-	<script src="https://kit.fontawesome.com/44df751230.js" crossorigin="anonymous" defer>
+  <body class="bg-gray-800">
+    <div class="flexbox flex-col">
+      <div>
+        <br />
+      </div>
 
-	</script>
-	<!--Title-->
-	<title>Issai H | Developer</title>
-	<!--Default Meta Tags-->
-	<meta charset="UTF-8">
-	<meta name="description" content="Personal site for Issai H a developer with experience in HTML, CSS, and Javascript">
-	<meta name="keywords" content="Issai, Issai H, Developer, HTML, CSS, JavaScript">
-	<meta name="author" content="Issai H">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="content-language" content="en-us" />
-	<!--Open Graph Meta Tag-->
-	<meta property="og:site_name" content="Issai H | Developer">
-	<meta property="og:title" content="Issai H | Developer">
-	<meta property="og:description" content="Personal site for Issai H a developer with experience in HTML, CSS, and Javascript">
-	<meta property="og:image" content="https://issai.club/media/green-ball.gif">
-	<meta property="og:url" content="https://issai.club">
-	<!--Twitter Meta Tags-->
-	<meta name="twitter:creator" content="TheLimifiedLime">
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:image:alt" content="Green ball being sliced to forma triangle the forming back into a ball">
-	<!--Other Metadata-->
-	<meta name="theme-color" content="#2ECC71">
-	<!--Stylesheets-->
-	<link href="/css/tailwind.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-	<meta name="msvalidate.01" content="CD9946591381E76F9F02C422F070BB4B" />
-	<style>
-		.floating {
-			animation-name: floating;
-			animation-duration: 3s;
-			animation-iteration-count: infinite;
-		}
+      <div>
+        <h1
+          class="
+            animate__animated animate__slideInDown
+            text-center text-3xl text-green-500
+            font-mono
+          "
+        >
+          Hey 👋,
+        </h1>
+        <h1
+          class="
+            animate__animated animate__slideInDown
+            text-center text-3xl text-green-500
+            font-mono
+          "
+        >
+          I'm <span class="text-white">Issai H.</span>
+        </h1>
+        <h1
+          class="
+            animate__animated animate__slideInDown
+            text-center text-3xl text-green-500
+            mb-12
+            font-mono
+          "
+        >
+          A developer focusing on HTML, CSS, and Javascript
+        </h1>
+      </div>
 
-		@keyframes floating {
-			0% {
-				transform: translate(0, 0px);
-			}
-			50% {
-				transform: translate(0, 15px);
-			}
-			100% {
-				transform: translate(0, -0px);
-			}
-		}
-	</style>
-</head>
-
-<body class="bg-gray-800">
-	<div class="flexbox flex-col">
-		<div>
-			<br>
-    </div>
-
-    <div>
-      <h1 class="animate__animated animate__slideInDown text-center text-3xl text-green-500 font-mono">Hey 👋,</h1>
-      <h1 class="animate__animated animate__slideInDown text-center text-3xl text-green-500 font-mono">I'm <span class="text-white">Issai H.</span></h1>
-      <h1 class="animate__animated animate__slideInDown text-center text-3xl text-green-500 mb-12 font-mono">A developer focusing on HTML, CSS, and Javascript</h1>
-    </div>
-
-    <div>
-      <section>
-        <header>
-          <h1 class="animate__animated animate__slideInDown text-center text-3xl text-green-500 font-mono">About Me:</h1>
-        </header>
-        <br>
-        <h1 class="animate__animated animate__slideInDown text-center text-base text-white font-mono mx-4">I'm a 13 year old developer who likes to code Discord Bots, little scripts, and sometimes websites. I started coding at the beginning of 2020 and have since improved my skills. I hope to gain more experience and knowlege as I move forward.</h1>
-      </section>
-    </div>
-    <br>
       <div>
         <section>
           <header>
-            <h1 class="animate__animated animate__slideInDown text-center text-3xl text-green-500 font-mono">My Projects:</h1>
+            <h1
+              class="
+                animate__animated animate__slideInDown
+                text-center text-3xl text-green-500
+                font-mono
+              "
+            >
+              About Me:
+            </h1>
           </header>
-          <br>
-          <img class="floating place-self-centered rounded-full" style="margin: auto;" src="/media/seashell.webp" alt="Seashell Logo"  width="200px" height="200px" ondragstart="return false;">
-          <br>
-           <h1 class="text-center text-3xl text-white mb-12 font-mono">
-            <a data-track-click="seashell" class="hover:underline" href="https://github.com/SeasideDevs/Link-Shortener-Bot" target="_blank" rel="noreferrer noopener">Seashell</a>
-          </h1>
-          <img class="floating place-self-centered rounded-full" style="margin: auto;" src="/media/lighthouse.webp" alt="Seashell Logo"  width="200px" height="200px" ondragstart="return false;">
-          <br>
-           <h1 class="text-center text-3xl text-white mb-12 font-mono">
-            <a data-track-click="lighthouse" class="hover:underline" href="https://github.com/TheLimifiedLime/Lighthouse" target="_blank" rel="noreferrer noopener">Lighthouse</a>
+          <br />
+          <h1
+            class="
+              animate__animated animate__slideInDown
+              text-center text-base text-white
+              font-mono
+              mx-4
+            "
+          >
+            I'm a 13 year old developer who likes to code Discord Bots, little
+            scripts, and sometimes websites. I started coding at the beginning
+            of 2020 and have since improved my skills. I hope to gain more
+            experience and knowlege as I move forward.
           </h1>
         </section>
-      </h1>
-    </div>
+      </div>
+      <br />
+      <div>
+        <section>
+          <header>
+            <h1
+              class="
+                animate__animated animate__slideInDown
+                text-center text-3xl text-green-500
+                font-mono
+              "
+            >
+              My Projects:
+            </h1>
+          </header>
+          <br />
+          <img
+            class="floating place-self-centered rounded-full"
+            style="margin: auto"
+            src="/media/seashell.webp"
+            alt="Seashell Logo"
+            width="200px"
+            height="200px"
+            ondragstart="return false;"
+          />
+          <br />
+          <h1 class="text-center text-3xl text-white mb-12 font-mono">
+            <a
+              data-track-click="seashell"
+              class="hover:underline"
+              href="https://github.com/SeasideDevs/Link-Shortener-Bot"
+              target="_blank"
+              rel="noreferrer noopener"
+              >Seashell</a
+            >
+          </h1>
+          <img
+            class="floating place-self-centered rounded-full"
+            style="margin: auto"
+            src="/media/lighthouse.webp"
+            alt="Seashell Logo"
+            width="200px"
+            height="200px"
+            ondragstart="return false;"
+          />
+          <br />
+          <h1 class="text-center text-3xl text-white mb-12 font-mono">
+            <a
+              data-track-click="lighthouse"
+              class="hover:underline"
+              href="https://github.com/TheLimifiedLime/Lighthouse"
+              target="_blank"
+              rel="noreferrer noopener"
+              >Lighthouse</a
+            >
+          </h1>
+        </section>
+      </div>
 
-    <div>
-      <section>
-      <header>
-          <h1 class="animate__animated animate__slideInDown text-center text-3xl text-green-500 font-mono">Socials:</h1>
-      </header>
-      <br>
-        <div class="flex flex-row space-x-4">
-          
-          <a data-track-click="github" style="margin-left:auto;margin-right:auto;" target="_blank" href="https://github.com/TheLimifiedLime" rel="noreferrer noopener"><i style="color:white;" class="animate__animated animate__slideInDown fab fa-github fa-3x"></i></a>
-          <a data-track-click="discord" style="margin-left:auto;margin-right:auto;" target="_blank" href="https://discord.com/users/738966191519039640" rel="noreferrer noopener"><i style="color:white;" class="animate__animated animate__slideInDown fab fa-discord fa-3x"></i></a>
-          <a data-track-click="reddit" style="margin-left:auto;margin-right:auto;" target="_blank" href="https://reddit.com/u/TheLimifiedLime" rel="noreferrer noopener"><i style="color:white;" class="animate__animated animate__slideInDown fab fa-reddit fa-3x"></i></a>
-          <a data-track-click="twitter" style="margin-left:auto;margin-right:auto;" target="_blank" href="https://twitter.com/TheLimifiedLime" rel="noreferrer noopener"><i style="color:white;" class="animate__animated animate__slideInDown fab fa-twitter fa-3x"></i></a>
-        
-        </div>
-      </section>
+      <div>
+        <section>
+          <header>
+            <h1
+              class="
+                animate__animated animate__slideInDown
+                text-center text-3xl text-green-500
+                font-mono
+              "
+            >
+              Socials:
+            </h1>
+          </header>
+          <br />
+          <div class="flex flex-row space-x-4">
+            <a
+              data-track-click="github"
+              style="margin-left: auto; margin-right: auto"
+              target="_blank"
+              href="https://github.com/TheLimifiedLime"
+              rel="noreferrer noopener"
+              ><i
+                style="color: white"
+                class="
+                  animate__animated animate__slideInDown
+                  fab
+                  fa-github fa-3x
+                "
+              ></i
+            ></a>
+            <a
+              data-track-click="discord"
+              style="margin-left: auto; margin-right: auto"
+              target="_blank"
+              href="https://discord.com/users/738966191519039640"
+              rel="noreferrer noopener"
+              ><i
+                style="color: white"
+                class="
+                  animate__animated animate__slideInDown
+                  fab
+                  fa-discord fa-3x
+                "
+              ></i
+            ></a>
+            <a
+              data-track-click="reddit"
+              style="margin-left: auto; margin-right: auto"
+              target="_blank"
+              href="https://reddit.com/u/TheLimifiedLime"
+              rel="noreferrer noopener"
+              ><i
+                style="color: white"
+                class="
+                  animate__animated animate__slideInDown
+                  fab
+                  fa-reddit fa-3x
+                "
+              ></i
+            ></a>
+            <a
+              data-track-click="twitter"
+              style="margin-left: auto; margin-right: auto"
+              target="_blank"
+              href="https://twitter.com/TheLimifiedLime"
+              rel="noreferrer noopener"
+              ><i
+                style="color: white"
+                class="
+                  animate__animated animate__slideInDown
+                  fab
+                  fa-twitter fa-3x
+                "
+              ></i
+            ></a>
+          </div>
+        </section>
+      </div>
+      <br />
+      <div class="text-center">
+        <section>
+          <header>
+            <h1
+              class="
+                animate__animated animate__slideInDown
+                text-center text-3xl text-green-500
+                font-mono
+              "
+            >
+              Contact Me:
+            </h1>
+          </header>
+          <h1
+              class="
+                animate__animated animate__slideInDown
+                text-center text-3xl text-white
+                font-mono
+              "
+            >
+              contact[at]issai[dot]club
+            </h1>
+        </section>
+      </div>
     </div>
-    <br>
-    <div class="text-center">
-      <section>
-        <header>
-          <h1 class="animate__animated animate__slideInDown text-center text-3xl text-green-500 font-mono">Contact Me:</h1>
-        </header>
-        <form class="font-mono" action="https://issai.club/api/form" method="POST" target="_self" accept-charset="UTF-8" id="contact">
-          <!--Email-->
-          <label for="email" class="animate__animated animate__slideInDown text-center text-lg text-white font-mono">
-            Email:
-            <br>
-              <input id="email" type="email" class="text-center text-black outline-none rounded-md w-56 h-8 focus:ring-4 focus:ring-green-400" type="text" maxlength="50" placeholder="contact@issai-is.cool" name="email" required>
-              <br>
-            </label>
-  
-          <!--Subject-->
-          <label class="animate__animated animate__slideInDown text-center text-lg text-white font-mono">
-            Subject:
-            <br>
-            <input type="text" class="text-center text-black outline-none rounded-md h-8 focus:ring-4 focus:ring-green-400 w-3/4 sm:w-2/4" minlength="40" maxlength="200" placeholder="Hey are you able to tell me how you made this awesome form?" name="subject" required>
-          </label>
-          <br>
-          <!--Message-->
-          <label for="messsage" class="animate__animated animate__slideInDown text-center text-lg text-white font-mono">
-            Message:
-            <br>
-              <textarea id="message" type="text" class="text-center text-black outline-none rounded-md focus:ring-4 focus:ring-green-400 w-3/4 sm:w-2/4 resize-y" minlength="60" maxlength="400" placeholder="I really like how you designed this form. It is the best one I seen in ages. Please tell me how to be this good!" name="message" required rows="2"></textarea>
-            </label>
-            <br>
-          <div class="h-captcha m-auto" data-sitekey="d957bbd0-ca4d-41c2-bfa7-cbc2b72c0305" data-theme="dark" data-callback="hcaptcha_callback"" style="display: inline-block;"></div>
-          <script src="https://hcaptcha.com/1/api.js" async defer></script>
-          <br>
-          <input id="sb" data-track-click="submit" type="submit" value="Submit" class="rounded-md bg-gradient-to-r from-green-400 to-green-600 px-4 py-2" disabled>
-          <script>
-            function hcaptcha_callback() {
-              const element = document.getElementById("sb");
-              element.removeAttribute("disabled");
-              element.classList.add("cursor-pointer")
-            }
-          </script>
-        </form>
-        <br>
-      </section>
-    </div>
-  </div>
-<h1 style="color: #1F2937;">uwu whats this</h1>
-</body>
+    <h1 style="color: #1f2937">uwu whats this</h1>
+  </body>
 </html>
