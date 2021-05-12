@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "npx postcss public/css/home.css -o public/css/tailwind.css",
     "start": "node ."
   },
   "keywords": [],
