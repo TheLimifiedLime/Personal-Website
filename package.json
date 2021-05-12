@@ -11,10 +11,8 @@
   "license": "MIT",
   "dependencies": {
     "autoprefixer": "^10.1.0",
-    "axios": "^0.21.1",
     "express": "^4.17.1",
     "express-validator": "^6.8.0",
-    "mocha": "^8.2.1",
     "postcss": "^8.2.10",
     "postcss-cli": "^8.3.1",
     "ratelimit-middleware": "^1.2.0",
