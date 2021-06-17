@@ -2,6 +2,8 @@
   "name": "issai.club",
   "description": "",
   "scripts": {
+    "watch": "postcss public/css/index.css -o ./public/css/tailwind.css -w",
+    "build": "postcss public/css/index.css -o public/css/tailwind.css",
     "start": "node index.js"
   },
   "repository": {
@@ -21,6 +23,7 @@
     "autoprefixer": "^10.2.6",
     "express": "^4.17.1",
     "postcss": "^8.3.4",
+    "postcss-cli": "^8.3.1",
     "prettier": "^2.3.1",
     "tailwindcss": "^2.1.4"
   }
