@@ -1,5 +1,0 @@
-User-agent: *
-Disallow: /404.html
-Disallow: /humans.txt
-
-Sitemap: https://issai.club/sitemap.xml
