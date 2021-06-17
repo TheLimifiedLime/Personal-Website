@@ -1,7 +1,26 @@
 {
   "name": "issai.club",
-  "license": "MIT",
+  "description": "",
   "scripts": {
     "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheLimifiedLime/issai.club.git"
+  },
+  "keywords": [
+    "website"
+  ],
+  "author": "Issai H",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheLimifiedLime/issai.club/issues"
+  },
+  "homepage": "https://github.com/TheLimifiedLime/issai.club#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "express": "^4.17.1",
+    "postcss": "^8.3.4",
+    "tailwindcss": "^2.1.4"
   }
 }
