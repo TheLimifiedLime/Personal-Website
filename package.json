@@ -1,3 +1,7 @@
 {
-  "name": "issai.club"
+  "name": "issai.club",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  }
 }
