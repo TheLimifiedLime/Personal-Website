@@ -1,5 +1,5 @@
 {
-  "name": "issai.club",
+  "name": "website",
   "description": "",
   "scripts": {
     "watch:css": "postcss public/css/index.css -o ./public/css/tailwind.css -w",
