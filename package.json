@@ -2,8 +2,8 @@
   "name": "website",
   "description": "Beautifully Stupid",
   "scripts": {
-    "watch:css": "postcss public/css/index.css -o ./public/css/tailwind.css -w",
-    "build:css": "postcss public/css/index.css -o public/css/tailwind.css",
+    "watch:css": "postcss public/css/tailwind.css -o ./public/css/index.css -w",
+    "build:css": "postcss public/css/tailwind.css -o public/css/index.css",
     "start": "node index.js"
   },
   "repository": {
@@ -22,9 +22,9 @@
   "devDependencies": {
     "autoprefixer": "^10.2.6",
     "express": "^4.17.1",
-    "postcss": "^8.3.4",
+    "postcss": "^8.3.5",
     "postcss-cli": "^8.3.1",
-    "prettier": "^2.3.1",
-    "tailwindcss": "^2.1.4"
+    "prettier": "^2.3.2",
+    "tailwindcss": "^2.2.4"
   }
 }
