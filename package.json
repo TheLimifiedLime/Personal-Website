@@ -1,6 +1,6 @@
 {
   "name": "website",
-  "description": "",
+  "description": "Beautifully Stupid",
   "scripts": {
     "watch:css": "postcss public/css/index.css -o ./public/css/tailwind.css -w",
     "build:css": "postcss public/css/index.css -o public/css/tailwind.css",
