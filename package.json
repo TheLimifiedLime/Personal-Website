@@ -2,13 +2,13 @@
   "name": "issai.club",
   "description": "",
   "scripts": {
-    "watch": "postcss public/css/index.css -o ./public/css/tailwind.css -w",
-    "build": "postcss public/css/index.css -o public/css/tailwind.css",
+    "watch:css": "postcss public/css/index.css -o ./public/css/tailwind.css -w",
+    "build:css": "postcss public/css/index.css -o public/css/tailwind.css",
     "start": "node index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TheLimifiedLime/issai.club.git"
+    "url": "git+https://github.com/TheLimifiedLime/website.git"
   },
   "keywords": [
     "website"
