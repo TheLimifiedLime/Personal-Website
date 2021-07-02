@@ -16,9 +16,9 @@
   "author": "Issai H",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/TheLimifiedLime/issai.club/issues"
+    "url": "https://github.com/TheLimifiedLime/website/issues"
   },
-  "homepage": "https://github.com/TheLimifiedLime/issai.club#readme",
+  "homepage": "https://github.com/TheLimifiedLime/website#readme",
   "devDependencies": {
     "autoprefixer": "^10.2.6",
     "express": "^4.17.1",
