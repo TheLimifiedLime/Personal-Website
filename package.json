@@ -2,8 +2,8 @@
   "name": "website",
   "description": "Beautifully Stupid",
   "scripts": {
-    "watch:css": "postcss public/css/tailwind.css -o public/css/index.css -w",
-    "build:css": "postcss public/css/tailwind.css -o public/css/index.css",
+    "watch:css": "postcss ./public/css/tailwind.css -o ./public/css/index.css -w",
+    "build:css": "postcss ./public/css/tailwind.css -o ./public/css/index.css",
     "start": "node index.js"
   },
   "repository": {
