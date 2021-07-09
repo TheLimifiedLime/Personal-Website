@@ -4,6 +4,7 @@
   "scripts": {
     "watch:css": "postcss ./public/css/tailwind.css -o ./public/css/index.css -w",
     "build:css": "postcss ./public/css/tailwind.css -o ./public/css/index.css",
+    "prettier": "prettier --write .",
     "start": "node index.js"
   },
   "repository": {
