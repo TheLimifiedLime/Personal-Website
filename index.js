@@ -1,10 +1,12 @@
 const express = require("express");
-const app = express()
+const app = express();
 
-app.use(express.static("./public", {
-    extensions: ["html"]
-}))
+app.use(
+  express.static("./public", {
+    extensions: ["html"],
+  })
+);
 
 app.listen(3000, () => {
-    console.log("⚡ Server Running")
-})
+  console.log("⚡ Server Running");
+});
